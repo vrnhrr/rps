@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<div class="game">
+  <h1>Rock Paper Scissors Lizard Spock</h1>
+
+  <div class="scoreboard">
+    <span>Player: <span id="playerScore">0</span></span>
+    <span>Computer: <span id="computerScore">0</span></span>
+  </div>
+
+  <div class="options">
+    <button class="btn" data-choice="rock">Rock</button>
+    <button class="btn" data-choice="paper">Paper</button>
+    <button class="btn" data-choice="scissors">Scissors</button>
+    <button class="btn" data-choice="lizard">Lizard</button>
+    <button class="btn" data-choice="spock">Spock</button>
+  </div>
+
+  <div class="result">
+    <p id="resultText">Make your choice.</p>
+    <p id="reasonText"></p>
+    <p id="computerChoice"></p>
+  </div>
+
+  <button class="reset-btn" id="resetGame">Reset</button>
+</div>
+
+</body>
+</html>
