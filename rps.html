@@ -2,34 +2,26 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
 
 <div class="game">
   <h1>Rock Paper Scissors Lizard Spock</h1>
 
-  <div class="scoreboard">
-    <span>Player: <span id="playerScore">0</span></span>
-    <span>Computer: <span id="computerScore">0</span></span>
-  </div>
-
   <div class="options">
-    <button class="btn" data-choice="rock">Rock</button>
-    <button class="btn" data-choice="paper">Paper</button>
-    <button class="btn" data-choice="scissors">Scissors</button>
-    <button class="btn" data-choice="lizard">Lizard</button>
-    <button class="btn" data-choice="spock">Spock</button>
+    <button class="btn rock" onclick="playGame('rock')">Rock</button>
+    <button class="btn paper" onclick="playGame('paper')">Paper</button>
+    <button class="btn scissors" onclick="playGame('scissors')">Scissors</button>
+    <button class="btn lizard" onclick="playGame('lizard')">Lizard</button>
+    <button class="btn spock" onclick="playGame('spock')">Spock</button>
   </div>
 
-  <div class="result">
-    <p id="resultText">Make your choice.</p>
-    <p id="reasonText"></p>
-    <p id="computerChoice"></p>
+  <div class="results">
+    <p id="resultText">Make your choice to start the game!</p>
+    <p id="computerChoice">Computer's choice: </p>
   </div>
-
-  <button class="reset-btn" id="resetGame">Reset</button>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
