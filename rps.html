@@ -7,6 +7,11 @@
 
 <div class="game">
   <h1>Rock Paper Scissors Lizard Spock</h1>
+  
+  <div class="scoreboard">
+    <span>Player: <span id="playerScore">0</span></span>
+    <span>Computer: <span id="computerScore">0</span></span>
+  </div>
 
   <div class="options">
     <button class="btn rock" onclick="playGame('rock')">Rock</button>
@@ -20,6 +25,9 @@
     <p id="resultText">Make your choice to start the game!</p>
     <p id="computerChoice">Computer's choice: </p>
   </div>
+
+  <button class="reset-btn" id="resetGame">Reset</button>
+
 </div>
 
 <script src="script.js"></script>
